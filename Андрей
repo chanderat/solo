@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Сайт</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        
+        nav {
+            background: #333;
+            position: fixed;
+            width: 100%;
+            padding: 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover { color: #4CAF50; }
+        
+        section {
+            padding: 4rem 2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #главная { background: #f4f4f4; }
+        #о-нас { background: #fff; }
+        #контакты { background: #f9f9f9; }
+        
+        .content {
+            max-width: 800px;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        p { color: #666; margin-bottom: 1.5rem; }
+        
+        @media (max-width: 600px) {
+            nav { text-align: center; }
+            nav a { display: block; margin: 0.5rem 0; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#главная">Главная</a>
+        <a href="#о-нас">О нас</a>
+        <a href="#контакты">Контакты</a>
+    </nav>
+ 
+    <section id="главная">
+        <div class="content">
+            <h1>Добро пожаловать!</h1>
+            <p>Это современный одностраничный сайт с адаптивным дизайном и плавной навигацией.</p>
+        </div>
+    </section>
+ 
+    <section id="о-нас">
+        <div class="content">
+            <h1>О нас</h1>
+            <p>Мы создаем инновационные решения для цифрового мира. Наша команда профессионалов готова реализовать любые ваши идеи.</p>
+        </div>
+    </section>
+ 
+    <section id="контакты">
+        <div class="content">
+            <h1>Контакты</h1>
+            <p>Email: contact@example.com<br>Телефон: +7 (999) 123-45-67<br>Адрес: Минск, ул. Примерная, 15</p>
+        </div>
+    </section>
+</body>
+</html>
